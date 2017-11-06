@@ -1,0 +1,43 @@
+package ir.seefa.sample.springbatch;
+
+/**
+ * Created by IntelliJ IDEA.
+ *
+ * @author Saman Delfani
+ * @version 1.0
+ * @since 11/6/2017 8:46 AM
+ */
+public class Person {
+    private String lastName;
+    private String firstName;
+
+    public Person() {
+
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "firstName: " + firstName + ", lastName: " + lastName;
+    }
+}
